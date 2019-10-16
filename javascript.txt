@@ -1,0 +1,85 @@
+
+
+ //create the question 
+var questions = [
+    {
+        question: "who is the best between this superheroes?",
+        answers: {
+            a: "Superman",
+            b: "Batman",
+            c: "Kolon",
+            correct: "c"
+    },
+    
+        question: "What movie is the best",
+        answers: {
+            a: "Avengers",
+            b: "BAtaman vs superman",
+            c: "Avatar",
+            correct: "c"
+        },
+    
+        question: "What is the best time to post on social media ?",
+        answers: {
+            a: "7am",
+            b: "7PM",
+            c: "noon",
+            correct: "b"
+    }
+    }];
+
+//Time setting
+//variables
+
+var thetime = document.querySelector ("#thetime");
+var questionsAsk = document.querySelector("#questionask");
+var Start_time = document.querySelector ("#start_time");
+var number_ofsecond = 5;
+var answers =document.querySelector("#answers");
+var wait_periods = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Start timer
+//based my self on dave example in class
+
+Start_time.addEventListener("click",function(){
+    if (wait_periods === 0){
+        wait_periods = setInterval(function (){
+            number_ofsecond--;
+            thetime.textContent = number_ofsecond + "second" ;
+
+            if (number_ofsecond <=0 ){
+                clearInterval(wait_periods);
+            }
+
+        },1000);
+
+    }
+}); 
+
