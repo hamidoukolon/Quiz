@@ -1,40 +1,44 @@
-<!DOCTYPE html> 
- <html lang="en"> 
- 
- 
- <head> 
-     <meta charset="UTF-8"> 
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
- 
- 
- 
- 
- 
-     <title> Quiz</title> 
- </head> 
- 
- 
- <body> 
-     <div id=""> 
-         <div id="Thetime"></div> 
-         <div id="questionsAsk"> 
-             <h1>quiz</h1> 
-             <p>Answer the questions you have 20 second!</p> 
-             <ul id="answers"></ul> 
-             <button id="start_time"> Start</button> 
-</div> 
+<!DOCTYPE html>
+<html lang="en">
 
- 
-     </div> 
- 
- 
-     <script src="javascript.txt"></script> 
- 
- 
- 
- 
- </body> 
- 
- 
- </html> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="startScreen">
+        <h1>quiz</h1>
+        <p>Answer the questions you have 20 second!</p>
+        <button id="start_time"> Start</button>
+    </div>
+
+    <div id="questionBox" class="hide">
+        <div id="Thetime">75 seconds</div>
+        <div id="thisQuestion"> Some Question</div>
+        <div id="answers"> Some Answers</div>
+    </div>
+
+    <div id="scoreboard">
+        <div>
+            Wins: <span id="winCount">0</span>
+        </div>
+        <div>
+            Losses: <span id="lossCount">0</span>
+        </div>
+        <div>
+            High Score: <span id="highScore">0</span>
+        </div>
+    </div>
+
+
+    <script src="javascript.js"></script>
+</body>
+
+
+</html>
