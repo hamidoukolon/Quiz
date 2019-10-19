@@ -16,7 +16,7 @@ var questions = [
     {
         title: "What is the best time to post on social media ?",
         choices: ["7am", "7pm", "noon"],
-        answer: "Avatar"
+        answer: "noon"
     },
 ];
 
@@ -113,7 +113,7 @@ function handleChoice(){
 function ShowScores(){
     if(!highScore || highScoreName){
         highScore = 0
-        highScoreName = "N/A"
+        highScoreName = ""
         localStorage.setItem("highScore", highScore)
         localStorage.setItem("highScoreName", highScore)
     }

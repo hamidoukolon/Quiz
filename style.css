@@ -1,3 +1,21 @@
 .hide {
     display: none;
 }
+
+.stratScreen{
+text-align: center
+
+}
+
+body{
+	font-size: 20px;
+	font-family: sans-serif;
+    color: #333;
+    text-align: center;
+}
+.questionBox{
+	font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
