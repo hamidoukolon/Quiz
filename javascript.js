@@ -111,13 +111,14 @@ function handleChoice(){
     }
 }
 function ShowScores(){
-    if(!highScore || highScoreName){
-        highScore = 0
-        highScoreName = ""
-        localStorage.setItem("highScore", highScore)
-        localStorage.setItem("highScoreName", highScore)
-    }
-    else if(correct > highScore){
+    // if(!highScore || highScoreName){
+    //     console.log("test")
+    //     highScore = 0
+    //     highScoreName = ""
+    //     localStorage.setItem("highScore", highScore)
+    //     localStorage.setItem("highScoreName", highScore)
+    // }
+    if(correct > highScore){
         var name = prompt("What is your name?")
         highScore = correct;
         localStorage.setItem("highScore", highScore)
@@ -131,3 +132,6 @@ function ShowScores(){
     document.getElementById("lossCount").innerText = incorrect
     document.getElementById("highScore").innerText = highScore + " " + highScoreName
 }
+
+//  change storage to array 
+// json parse and stringfire 
